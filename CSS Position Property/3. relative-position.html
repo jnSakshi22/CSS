@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Position</title>
+    <style>
+      .parent {
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .relative-left {
+        position: relative;
+        left: 0px;
+        border: 5px solid red;
+      }
+      .relative-top {
+        position: relative;
+        top: 0px;
+        border: 5px solid green;
+      }
+      .relative-bottom {
+        position: relative;
+        bottom: 0px;
+        border: 5px solid yellow;
+      }
+      .relative-right {
+        position: relative;
+        right: 30px;
+        border: 5px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Relative Position</h1>
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      position.
+    </p>
+    <p>
+      Setting the top, right, bottom, and left properties of a
+      relatively-positioned element will cause it to be adjusted away from its
+      normal position. Other content will not be adjusted to fit into any gap
+      left by the element.
+    </p>
+    <div class="parent">
+      <div class="relative-left">
+        This div element content with a relative left position
+      </div>
+      <div class="relative-top">
+        This div element content with a relative top position
+      </div>
+
+      <div class="relative-bottom">
+        This div element content with a relative bottom position
+      </div>
+      <div class="relative-right">
+        This div element content with a relative right position
+      </div>
+    </div>
+  </body>
+</html>
